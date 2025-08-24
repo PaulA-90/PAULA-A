@@ -1,0 +1,203 @@
+[presentacion-firma-auditores_Version5.html](https://github.com/user-attachments/files/21955595/presentacion-firma-auditores_Version5.html)
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auditores & Asociados A. C.V.</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #e8f9f6;
+            margin: 0;
+            padding: 0;
+            color: #2d2d2d;
+        }
+        header {
+            background: #20c997; /* Verde agua */
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+            position: relative;
+        }
+        .logo {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 16px;
+        }
+        .logo svg {
+            width: 60px;
+            height: 60px;
+        }
+        .firma-nombre {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        section {
+            max-width: 800px;
+            margin: 30px auto;
+            background: #fff;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+        }
+        h1, h2 {
+            margin-top: 0;
+        }
+        ul {
+            margin-top: 0;
+        }
+        .chat-section {
+            max-width: 800px;
+            margin: 30px auto;
+            background: #e8f9f6;
+            border-radius: 8px;
+            padding: 20px 30px 25px 30px;
+            box-shadow: 0 2px 10px rgba(32, 201, 151, 0.13);
+        }
+        .chat-header {
+            color: #168f6e;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .chat-box {
+            background: #fff;
+            border: 1px solid #20c997;
+            border-radius: 6px;
+            padding: 12px;
+            height: 200px;
+            overflow-y: auto;
+            margin-bottom: 10px;
+            font-size: 1em;
+        }
+        .chat-message {
+            margin-bottom: 8px;
+        }
+        .chat-message.user {
+            text-align: right;
+            color: #168f6e;
+        }
+        .chat-message.bot {
+            text-align: left;
+            color: #2d2d2d;
+        }
+        .chat-input-area {
+            display: flex;
+            gap: 8px;
+        }
+        .chat-input {
+            flex: 1;
+            padding: 8px;
+            font-size: 1em;
+            border-radius: 4px;
+            border: 1px solid #20c997;
+        }
+        .chat-send {
+            background: #20c997;
+            color: #fff;
+            border: none;
+            padding: 8px 18px;
+            font-size: 1em;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .chat-send:hover {
+            background: #168f6e;
+        }
+        footer {
+            background: #168f6e;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <span class="logo">
+            <!-- Logo SVG: Círculo y una check de auditoría -->
+            <svg viewBox="0 0 60 60" fill="none">
+                <circle cx="30" cy="30" r="28" stroke="#fff" stroke-width="4" fill="#20c997" />
+                <polyline points="18,32 28,42 44,22" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </span>
+        <span class="firma-nombre">
+            <h1 style="margin:0;">Auditores & Asociados A. C.V.</h1>
+            <p style="margin:0;">Firma de Auditores Externos</p>
+        </span>
+    </header>
+    <section>
+        <h2>¿Quiénes somos?</h2>
+        <p>
+            Auditores & Asociados A. C.V. es una firma profesional de auditoría y consultoría que inició sus operaciones en 2005. Nuestro equipo está integrado por auditores públicos certificados y profesionales con amplia experiencia en el sector financiero, comercial y de servicios.
+        </p>
+        <h2>Historia y Origen</h2>
+        <p>
+            Fundada en la ciudad de Lima, nuestra firma surgió con el propósito de ofrecer servicios de auditoría independientes y de alta calidad a empresas que buscan transparencia y cumplimiento normativo. Con los años, hemos consolidado nuestra reputación gracias a nuestro compromiso ético y profesional.
+        </p>
+        <h2>¿Qué ofrecemos?</h2>
+        <ul>
+            <li>Auditoría financiera externa e interna</li>
+            <li>Revisión y certificación de estados financieros</li>
+            <li>Consultoría contable y tributaria</li>
+            <li>Auditoría operativa y de gestión</li>
+            <li>Asesoría en control interno y prevención de fraudes</li>
+        </ul>
+        <h2>Actividades principales</h2>
+        <ul>
+            <li>Elaboración de informes de auditoría financiera para empresas de diferentes sectores</li>
+            <li>Evaluación y mejora de sistemas de control interno</li>
+            <li>Asistencia en procesos de fiscalización tributaria</li>
+            <li>Capacitaciones y talleres sobre normativas contables y auditoría</li>
+            <li>Due diligence en procesos de fusiones y adquisiciones</li>
+        </ul>
+    </section>
+
+    <div class="chat-section">
+        <div class="chat-header">¿Tienes alguna consulta? ¡Escríbenos aquí!</div>
+        <div class="chat-box" id="chatBox">
+            <div class="chat-message bot">¡Bienvenido! ¿En qué podemos ayudarte hoy?</div>
+        </div>
+        <form id="chatForm" class="chat-input-area" autocomplete="off">
+            <input type="text" id="chatInput" class="chat-input" placeholder="Escribe tu consulta..." required />
+            <button type="submit" class="chat-send">Enviar</button>
+        </form>
+    </div>
+
+    <footer>
+        &copy; 2025 Auditores & Asociados A. C.V. &mdash; Comprometidos con la transparencia y la confianza
+    </footer>
+
+    <script>
+        // Simulación sencilla de chat en el lado del cliente (no conecta con un servidor real)
+        const chatBox = document.getElementById('chatBox');
+        const chatForm = document.getElementById('chatForm');
+        const chatInput = document.getElementById('chatInput');
+
+        chatForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const userMsg = chatInput.value.trim();
+            if (userMsg === '') return;
+
+            // Agregar mensaje de usuario
+            appendMessage('user', userMsg);
+            chatInput.value = '';
+
+            // Simulación de respuesta automática
+            setTimeout(() => {
+                appendMessage('bot', 'Gracias por tu consulta. Pronto un asesor se pondrá en contacto contigo.');
+            }, 900);
+        });
+
+        function appendMessage(sender, text) {
+            const msgDiv = document.createElement('div');
+            msgDiv.classList.add('chat-message', sender);
+            msgDiv.textContent = text;
+            chatBox.appendChild(msgDiv);
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+    </script>
+</body>
+</html>
